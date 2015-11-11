@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MasterViewController.h
 //  Demo3DTouch
 //
 //  Created by AlanYen on 2015/11/11.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MasterViewController : UIViewController
 
 
 @end
