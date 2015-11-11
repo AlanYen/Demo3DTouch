@@ -66,6 +66,9 @@
     return cell;
 }
 
+#pragma mark -
+#pragma mark - [UIViewControllerPreviewingDelegate]
+
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
 
     // 參考 http://stackoverflow.com/questions/32772351/3d-touch-peek-and-pop-trouble
