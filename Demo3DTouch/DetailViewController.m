@@ -10,6 +10,7 @@
 
 @interface DetailViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *infoLabel;
 @property (nonatomic, strong) NSArray *previewActions;
 
 @end
@@ -19,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Detail";
+    self.title = @"3D Touch: Detail";
+    self.infoLabel.text = self.infoText;
 }
 
 - (void)didReceiveMemoryWarning {

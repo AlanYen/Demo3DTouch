@@ -11,6 +11,8 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) UIViewController *masterViewController;
+@property (strong, nonatomic) NSString *infoText;
+
 
 @end
 
