@@ -96,6 +96,10 @@
 
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     
+    //
+    // 如果 APP 開啟狀態下會直接從這一個地方進入
+    //
+    
     BOOL hasHandled = [self handleQuickActions:shortcutItem];
     // 告訴系統Quick Actions有沒有被妥善處理
     completionHandler(hasHandled);
