@@ -9,3 +9,4 @@ Demo 3DTouch Full Function (QuickAction / Peek and Pop) </br>
 </br>https://developer.apple.com/library/prerelease/ios/samplecode/ViewControllerPreviews/Introduction/Intro.html#//apple_ref/doc/uid/TP40016546
 </br>http://useyourloaf.com/blog/3d-touch-peek-and-pop.html
 </br>http://code.tutsplus.com/tutorials/ios-9-an-introduction-to-3d-touch--cms-25115
+</br>http://krakendev.io/peek-pop/
