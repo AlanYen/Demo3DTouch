@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DFD4F441BF433DF008940FA /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD4F431BF433DF008940FA /* MyTableView.m */; };
+		2DFD4F471BF43DF0008940FA /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD4F461BF43DEF008940FA /* MyLabel.m */; };
 		2DFD52101BF2D93500C7CD74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD520F1BF2D93500C7CD74 /* main.m */; };
 		2DFD52131BF2D93500C7CD74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD52121BF2D93500C7CD74 /* AppDelegate.m */; };
 		2DFD52161BF2D93500C7CD74 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD52151BF2D93500C7CD74 /* MasterViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DFD4F421BF433DF008940FA /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		2DFD4F431BF433DF008940FA /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		2DFD4F451BF43DEF008940FA /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		2DFD4F461BF43DEF008940FA /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
 		2DFD520B1BF2D93500C7CD74 /* Demo3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo3DTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFD520F1BF2D93500C7CD74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DFD52111BF2D93500C7CD74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +114,10 @@
 			children = (
 				2DFD52111BF2D93500C7CD74 /* AppDelegate.h */,
 				2DFD52121BF2D93500C7CD74 /* AppDelegate.m */,
+				2DFD4F451BF43DEF008940FA /* MyLabel.h */,
+				2DFD4F461BF43DEF008940FA /* MyLabel.m */,
+				2DFD4F421BF433DF008940FA /* MyTableView.h */,
+				2DFD4F431BF433DF008940FA /* MyTableView.m */,
 				2DFD52431BF2EDDF00C7CD74 /* DetailViewController.h */,
 				2DFD52441BF2EDDF00C7CD74 /* DetailViewController.m */,
 				2DFD52141BF2D93500C7CD74 /* MasterViewController.h */,
@@ -279,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFD4F471BF43DF0008940FA /* MyLabel.m in Sources */,
 				2DFD52161BF2D93500C7CD74 /* MasterViewController.m in Sources */,
 				2DFD52131BF2D93500C7CD74 /* AppDelegate.m in Sources */,
 				2DFD52101BF2D93500C7CD74 /* main.m in Sources */,
 				2DFD52451BF2EDDF00C7CD74 /* DetailViewController.m in Sources */,
+				2DFD4F441BF433DF008940FA /* MyTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +520,7 @@
 				2DFD523A1BF2D93500C7CD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DFD523B1BF2D93500C7CD74 /* Build configuration list for PBXNativeTarget "Demo3DTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +529,7 @@
 				2DFD523D1BF2D93500C7CD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DFD523E1BF2D93500C7CD74 /* Build configuration list for PBXNativeTarget "Demo3DTouchUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +538,7 @@
 				2DFD52401BF2D93500C7CD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

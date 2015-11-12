@@ -40,6 +40,18 @@
     [viewController presentViewController:alertController animated:YES completion:nil];
 }
 
+- (UIPreviewAction *)createPreviewAction:(NSString *)title {
+    UIPreviewAction *action =
+    [UIPreviewAction actionWithTitle:title
+                               style:UIPreviewActionStyleDefault
+                             handler:^(UIPreviewAction *action,
+                                       UIViewController *previewViewController)
+     {
+         [self showMessage:self.masterViewController message:title];
+     }];
+    return action;
+}
+
 - (NSArray *)previewActionItems {
     return self.previewActions;
 }
@@ -48,34 +60,43 @@
     
     // Then to create a UIPreviewAction, we specify the action title, style and a block to handle the action:
     if (_previewActions == nil) {
-        UIPreviewAction *action1 =
-        [UIPreviewAction actionWithTitle:@"Action-1"
-                                   style:UIPreviewActionStyleDefault
-                                 handler:^(UIPreviewAction *action,
-                                           UIViewController *previewViewController)
-        {
-            [self showMessage:self.masterViewController message:@"Action-1"];
-        }];
         
-        UIPreviewAction *action2 =
-        [UIPreviewAction actionWithTitle:@"Action-2"
-                                   style:UIPreviewActionStyleDefault
-                                 handler:^(UIPreviewAction *action,
-                                           UIViewController *previewViewController)
-         {
-             [self showMessage:self.masterViewController message:@"Action-2"];
-         }];
+        UIPreviewAction *action1 = [self createPreviewAction:@"Action-1"];
+        UIPreviewAction *action2 = [self createPreviewAction:@"Action-2"];
+        UIPreviewAction *action3 = [self createPreviewAction:@"Action-3"];
+        UIPreviewAction *action4 = [self createPreviewAction:@"Action-4"];
+        UIPreviewAction *action5 = [self createPreviewAction:@"Action-5"];
+        UIPreviewAction *action6 = [self createPreviewAction:@"Action-6"];
+        UIPreviewAction *action7 = [self createPreviewAction:@"Action-7"];
+        UIPreviewAction *action8 = [self createPreviewAction:@"Action-8"];
         
-        UIPreviewAction *action3 =
-        [UIPreviewAction actionWithTitle:@"Action-3"
-                                   style:UIPreviewActionStyleDefault
-                                 handler:^(UIPreviewAction *action,
-                                           UIViewController *previewViewController)
-         {
-             [self showMessage:self.masterViewController message:@"Action-3"];
-         }];
+        // [可以是一層或二層結構]
+        
+        #if 0
+        
+        //
+        // 一層
+        //
+        _previewActions = @[action1, action2, action3, action4, action5, action6, action7, action8];
+        
+        #else
+        
+        //
+        // 二層
+        //
 
-        _previewActions = @[action1, action2, action3];
+        // 塞到 UIPreviewActionGroup 中
+        UIPreviewActionGroup *group1 = [UIPreviewActionGroup actionGroupWithTitle:@"Action Group 1"
+                                                                            style:UIPreviewActionStyleDestructive
+                                                                          actions:@[action1, action2, action3]];
+        
+        UIPreviewActionGroup *group2 = [UIPreviewActionGroup actionGroupWithTitle:@"Action Group 2"
+                                                                            style:UIPreviewActionStyleDefault
+                                                                          actions:@[action4, action5, action6, action7, action8]];
+        
+        _previewActions = @[group1, group2];
+        
+        #endif
     }
     return _previewActions;
 }
