@@ -10,3 +10,4 @@ Demo 3DTouch Full Function (QuickAction / Peek and Pop) </br>
 </br>http://useyourloaf.com/blog/3d-touch-peek-and-pop.html
 </br>http://code.tutsplus.com/tutorials/ios-9-an-introduction-to-3d-touch--cms-25115
 </br>http://krakendev.io/peek-pop/
+</br>http://pingguohe.net/2015/10/12/3D-Touch-2.html
