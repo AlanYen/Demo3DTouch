@@ -53,8 +53,8 @@
 }
 
 - (void)dealloc {
-    [self removeObserver:self.tableView forKeyPath:@"touchForce"];
-    [self removeObserver:self.tableView forKeyPath:@"touchMaximumPossibleForce"];
+    [self.tableView removeObserver:self forKeyPath:@"touchForce"];
+    [self.tableView removeObserver:self forKeyPath:@"touchMaximumPossibleForce"];
 }
 
 #pragma mark -
